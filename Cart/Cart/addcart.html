@@ -22,15 +22,34 @@
                             <div class="row">
                                 
                                 <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
-                                    <img src="pic.jpg" class="img-fluid" alt="cart img" onclick="myFunction()" class="popup">
-                                    <div class="popup" onclick="myFunction()">
-                                            <p class="popuptext" id="myPopup" ><b><u>Product Details</u></b><br>
-                                            Peach and white checked casual shirt, has a spread collar, quarter sleeved, curved hem.<br>
-                                            <b><u>Size and Fit</u></b><br> Regular Fit<br><b><u>Fabric</u></b><br>Viscose Rayon<br><b><u>Price</u></b><br>
-                                            &#x20B9 800<br><input type="button" value="Buy Me" onclick="addItem(0)" style="margin-right: 16px">
-                                            <input type="button" value="Delete" onclick="removeItem(0)"></p>
-                                            
+                                    <img src="pic.jpg" class="img-fluid" alt="cart img" data-target="#Modal" data-toggle="modal">
+                                    <div class="modal fade" id="Modal" tabindex="-1" data-backdrop="static">
+                                        <div class="modal-dialog modal-sm">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title"><b>Product-Details</b></h4>
+                                                    <button class="close" data-dismiss="modal">&times;</button>
+                                                    
 
+                                                </div>
+                                                <div class="modal-body">
+                                                <b>Description:</b>Peach and white checked casual shirt, has a spread collar, quarter sleeved and a curved hem.
+                                                <br><b>Size and Fit:</b> Regular Fit
+                                                <br><b>Fabric:</b> Viscose Rayon
+                                                <br><b>Cost:</b> &#x20B9 800
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button class="btn btn-primary" onclick="addItem(0)">Buy Me</button>
+                                                <button class="btn btn-primary" onclick="removeItem(0)">Delete</button>
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                        </div>
                                     </div>
                                 </div>
                                 
@@ -77,15 +96,36 @@
                             <div class="row">
                                 
                                 <div class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
-                                    <img src="pic2.png" class="img-fluid"  alt="cart img" onclick="myFunction1()" class="popup1">
-                                        <div class="popup1" onclick="myFunction1()">
-                                            <p class="popuptext1" id="myPopup1"><b><u>Product Details</u></b><br>
-                                            Black Tshirt for women, crop length, round neck, knitted cotton fabric.<br>
-                                            <b><u>Size and Fit</u></b><br> Regular Fit<br><b><u>Fabric</u></b><br>Cotton<br><b><u>Price</u></b><br>
-                                            &#x20B9 1000<br><input type="button" value="Buy Me" onclick="addItem(1)" style="margin-rigth:16px">
-                                            <input type="button" value="Delete" onclick="removeItem(1)">
-                                            </p>
+                                    <img src="pic2.png" class="img-fluid"  alt="cart img" data-target="#Modal1" data-toggle="modal" >
+                                    <div class="modal fade" id="Modal1" tabindex="-1" data-backdrop="static">
+                                        <div class="modal-dialog modal-sm">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title"><b>Product-Details</b></h4>
+                                                    <button class="close" data-dismiss="modal">&times;</button>
+                                                    
+
+                                                </div>
+                                                <div class="modal-body">
+                                                <b>Description:</b>Black T-Shirt for women, crop length, round neck with a knitted cotton fabric.
+                                                <br><b>Size and Fit:</b> Regular Fit
+                                                <br><b>Fabric:</b> Cotton
+                                                <br><b>Cost:</b> &#x20B9 1000
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button class="btn btn-primary" onclick="addItem(1)">Buy Me</button>
+                                                <button class="btn btn-primary" onclick="removeItem(1)">Delete</button>
+
+                                                </div>
+
+                                            </div>
+
+
+
                                         </div>
+                                    </div>
+                                        
                                     
                                 </div>
 
