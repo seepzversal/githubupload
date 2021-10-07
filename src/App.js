@@ -11,6 +11,7 @@ class App extends React.Component{
         }
         this.handleChange=this.handleChange.bind(this)//binding of the function inside the class component
     }
+    //handle change method which takes id as a key
     handleChange(id){
         this.setState(prevState =>{
             const updateTodos=prevState.todos.map(todo=>{

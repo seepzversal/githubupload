@@ -17,12 +17,12 @@ const todosData = [
     {
         id: 4,
         text: "Learn JavaScript",
-        completed: true
+        completed: false
     },
     {
         id: 5,
         text: "Do 2 topics of React",
-        completed: false
+        completed: true
     },
     {
         id: 6,
